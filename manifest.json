@@ -1,0 +1,9 @@
+{
+  "name": "Devil Hunter Arena",
+  "short_name": "DHA",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#090d12",
+  "theme_color": "#0b1118",
+  "description": "A mobile-friendly, third-person action hack-and-slash game with devil transformation combat."
+}
