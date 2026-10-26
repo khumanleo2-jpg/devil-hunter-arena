@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#0b1118" />
+    <title>Devil Hunter Arena</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-shell">
+      <canvas id="gameCanvas"></canvas>
+
+      <div id="hud">
+        <div class="panel stats-panel">
+          <div class="label">Hunter</div>
+          <div class="stat-row">
+            <span>HP</span>
+            <span id="healthText">100 / 100</span>
+          </div>
+          <div class="bar-wrap">
+            <div id="healthBar" class="bar health"></div>
+          </div>
+
+          <div class="stat-row">
+            <span>Fury</span>
+            <span id="furyText">0 / 100</span>
+          </div>
+          <div class="bar-wrap">
+            <div id="furyBar" class="bar fury"></div>
+          </div>
+        </div>
+
+        <div id="messageBanner">DEVIL FORM READY</div>
+      </div>
+
+      <div id="touchControls" aria-label="touch controls">
+        <div id="joystickBase" class="joystick-base">
+          <div id="joystickKnob" class="joystick-knob"></div>
+        </div>
+
+        <div id="actionButtons">
+          <button id="attackButton" class="action-btn primary">Attack</button>
+          <button id="transformButton" class="action-btn accent">Form</button>
+          <button id="dashButton" class="action-btn secondary">Dash</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
